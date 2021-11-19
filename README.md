@@ -1,0 +1,2 @@
+# Fitness-Android-App
+The app is an Android application whose idea is to create a food diet system, The app allow user to start a diet by inter his information and follow the food system by week to lose weight, user can replace high-calories food with low-calories food with the same level of importance, Practice some exercises to get the required weight and noticeable progress, user can rate the app according to his satisfaction
