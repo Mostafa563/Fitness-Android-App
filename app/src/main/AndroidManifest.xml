@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.example.fitnessapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.CaloriesDetailsActivity"></activity>
+        <activity android:name=".activities.CaloriesActivitiesActivity" />
+        <activity android:name=".activities.DayNormalVeganActivity" />
+        <activity android:name=".activities.WeekActivity" />
+        <activity android:name=".activities.SettingActivity" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".activities.EditProfileActivity" />
+        <activity android:name=".activities.WelcomeProfileActivity" />
+        <activity android:name=".activities.ForgetPasswordActivity" />
+        <activity android:name=".activities.SignInActivity" />
+        <activity android:name=".activities.SignUpActivity" />
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:theme="@style/WelcomActivityTheme" />
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
