@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_cl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/include1"
+                layout="@layout/calories_calculate_first_layout" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="325dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="17.5dp"
+                android:background="@color/OrigGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/include1" />
+
+            <include
+                android:id="@+id/include2"
+                layout="@layout/calories_breakfast" />
+
+            <include
+                android:id="@+id/include3"
+                layout="@layout/calories_lunch" />
+
+            <include android:id="@+id/include4"
+                layout="@layout/calories_snack" />
+
+            <include android:id="@+id/include5"
+                layout="@layout/calories_dinner" />
+
+            <ImageView
+                android:id="@+id/dumImg"
+                android:layout_width="96dp"
+                android:layout_height="29.5dp"
+                android:src="@drawable/ic_dumbles"
+                android:layout_marginTop="25.5dp"
+                android:layout_marginStart="21dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/include5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="50dp"/>
+
+            <TextView
+                android:id="@+id/ActivityTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Activity"
+                android:textColor="@color/orange"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/dumImg"
+                app:layout_constraintEnd_toEndOf="@id/dumImg"
+                app:layout_constraintTop_toTopOf="@id/dumImg" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="106dp"
+                android:fontFamily="@font/roboto"
+                android:text="70 Kcal"
+                android:textColor="@color/orange"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/ActivityTV"
+                app:layout_constraintTop_toTopOf="@+id/ActivityTV" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="burned"
+                android:textColor="#827676"
+                android:layout_marginStart="15dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
+                app:layout_constraintTop_toTopOf="@+id/ActivityTV" />
+
+            <TextView
+                android:id="@+id/detailsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17.5dp"
+                android:fontFamily="@font/roboto"
+                android:text="DETAILS"
+                android:textColor="#2694AA"
+                android:textSize="25sp"
+                android:layout_marginBottom="21dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ActivityTV" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

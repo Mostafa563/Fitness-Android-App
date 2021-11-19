@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/img_welcome_prof"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="33.5dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/sample_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.5dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_welcome_prof">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="312dp"
+            android:layout_height="375dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_welcome_prof">
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Sophie Jac"
+                android:textColor="@color/grey3"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/userET"
+                app:layout_constraintEnd_toEndOf="@+id/userET"
+                app:layout_constraintTop_toTopOf="@+id/userET" />
+
+            <EditText
+                android:id="@+id/userET"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#F1F0F0"
+                android:enabled="false"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:hint="Name"
+                android:textColorHint="@color/grey3"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/heightTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="169 cm"
+                android:textColor="@color/grey3"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/heightET"
+                app:layout_constraintEnd_toEndOf="@+id/heightET"
+                app:layout_constraintTop_toTopOf="@+id/heightET" />
+
+            <EditText
+                android:id="@+id/heightET"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:backgroundTint="@color/grey2"
+                android:enabled="false"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:hint="Height"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/grey3"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userET" />
+
+            <TextView
+                android:id="@+id/weightTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="82 kg"
+                android:textColor="@color/grey3"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/weightET"
+                app:layout_constraintEnd_toEndOf="@+id/weightET"
+                app:layout_constraintTop_toTopOf="@+id/weightET" />
+
+            <EditText
+                android:id="@+id/weightET"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:backgroundTint="@color/grey2"
+                android:enabled="false"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:hint="Weight"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/grey3"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/heightET" />
+
+            <TextView
+                android:id="@+id/genderTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Female"
+                android:textColor="@color/grey3"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/genderET"
+                app:layout_constraintEnd_toEndOf="@+id/genderET"
+                app:layout_constraintTop_toTopOf="@+id/genderET" />
+
+            <EditText
+                android:id="@+id/genderET"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:backgroundTint="@color/grey2"
+                android:enabled="false"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:hint="Gender"
+                android:inputType="text"
+                android:textColorHint="@color/grey3"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weightET" />
+
+            <TextView
+                android:id="@+id/goalWeightTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="60 kg"
+                android:textColor="@color/grey3"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/goalWeightET"
+                app:layout_constraintEnd_toEndOf="@+id/goalWeightET"
+                app:layout_constraintTop_toTopOf="@+id/goalWeightET" />
+
+            <EditText
+                android:id="@+id/goalWeightET"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:backgroundTint="@color/grey2"
+                android:enabled="false"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:hint="Goal Weight"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/grey3"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/genderET" />
+
+            <TextView
+                android:id="@+id/logoutTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="56dp"
+                android:fontFamily="@font/roboto"
+                android:text="Log Out"
+                android:textColor="@color/grey3"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/goalWeightET" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

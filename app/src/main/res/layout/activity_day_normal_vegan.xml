@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DayNormalVeganActivity">
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/day_title"
+        android:layout_width="204dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/roboto"
+        android:text="Day 1 (1680 Kcal)"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/backbtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_sec_title"
+        android:layout_width="204dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/roboto"
+        android:text="Normal Diet"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/day_title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl1"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="19.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_sec_title">
+
+        <ImageView
+            android:id="@+id/heartImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16.5dp"
+            android:fontFamily="@font/roboto"
+            android:text="Breakfast"
+            android:textColor="#113260"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/heartImg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/arImg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.5dp"
+            android:src="@drawable/ic_right_arrows"
+            app:layout_constraintEnd_toEndOf="@+id/heartImg"
+            app:layout_constraintStart_toStartOf="@+id/heartImg"
+            app:layout_constraintTop_toBottomOf="@+id/heartImg" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="22dp"
+            android:text="Egg, whole cooked"
+            android:textColor="#827676"
+            android:textSize="14dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/arImg1"
+            app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+        <ImageView
+            android:id="@+id/arImg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_right_arrows"
+            app:layout_constraintEnd_toEndOf="@+id/arImg1"
+            app:layout_constraintStart_toStartOf="@+id/arImg1"
+            app:layout_constraintTop_toBottomOf="@+id/arImg1" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="22dp"
+            android:text="Bread, Rye"
+            android:textColor="#827676"
+            android:textSize="14dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/arImg2"
+            app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+        <ImageView
+            android:id="@+id/arImg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_right_arrows"
+            app:layout_constraintEnd_toEndOf="@+id/arImg2"
+            app:layout_constraintStart_toStartOf="@+id/arImg2"
+            app:layout_constraintTop_toBottomOf="@+id/arImg2" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="22dp"
+            android:text="Milk, low fat"
+            android:textColor="#827676"
+            android:textSize="14dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/arImg3"
+            app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="6.5dp"
+        android:src="@drawable/ic_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl2"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1">
+
+        <ImageView
+            android:id="@+id/heartImg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16.5dp"
+            android:fontFamily="@font/roboto"
+            android:text="Morning Snack"
+            android:textColor="#113260"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/heartImg2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/arImg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.5dp"
+            android:src="@drawable/ic_right_arrows"
+            app:layout_constraintEnd_toEndOf="@+id/heartImg2"
+            app:layout_constraintStart_toStartOf="@+id/heartImg2"
+            app:layout_constraintTop_toBottomOf="@+id/heartImg2" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="22dp"
+            android:text="1 Piece of salty or low fat cheese"
+            android:textColor="#827676"
+            android:textSize="14dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/arImg4"
+            app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+        <ImageView
+            android:id="@+id/arImg5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_right_arrows"
+            app:layout_constraintEnd_toEndOf="@+id/arImg4"
+            app:layout_constraintStart_toStartOf="@+id/arImg4"
+            app:layout_constraintTop_toBottomOf="@+id/arImg4" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="22dp"
+            android:text="Any nuts without any salt, 4 almonds"
+            android:textColor="#827676"
+            android:textSize="14dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/arImg5"
+            app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="6.5dp"
+        android:src="@drawable/ic_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl3"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2">
+
+        <ImageView
+            android:id="@+id/heartImg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="Lunch"
+            android:textColor="#113260"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/heartImg3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/arImg6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.5dp"
+            android:src="@drawable/ic_right_arrows"
+            app:layout_constraintEnd_toEndOf="@+id/heartImg3"
+            app:layout_constraintStart_toStartOf="@+id/heartImg3"
+            app:layout_constraintTop_toBottomOf="@+id/heartImg3" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="22dp"
+            android:text="2 piece whole grain toast with vegetable"
+            android:textColor="#827676"
+            android:textSize="14dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/arImg6"
+            app:layout_constraintTop_toBottomOf="@+id/tv8" />
+
+        <ImageView
+            android:id="@+id/arImg7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_right_arrows"
+            app:layout_constraintEnd_toEndOf="@+id/arImg6"
+            app:layout_constraintStart_toStartOf="@+id/arImg6"
+            app:layout_constraintTop_toBottomOf="@+id/arImg6" />
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="22dp"
+            android:lineSpacingExtra="6dp"
+            android:text="1 Serving of any boiled meat  (chicken, beef,  lamb) "
+            android:textColor="#827676"
+            android:textSize="14dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/arImg7"
+            app:layout_constraintTop_toBottomOf="@+id/tv9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/line3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="6.5dp"
+        android:src="@drawable/ic_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl4"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line3">
+
+        <ImageView
+            android:id="@+id/heartImg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="Dinner"
+            android:textColor="#113260"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/heartImg4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/arImg8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.5dp"
+            android:src="@drawable/ic_right_arrows"
+            app:layout_constraintEnd_toEndOf="@+id/heartImg4"
+            app:layout_constraintStart_toStartOf="@+id/heartImg4"
+            app:layout_constraintTop_toBottomOf="@+id/heartImg4" />
+
+        <TextView
+            android:id="@+id/tv12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="22dp"
+            android:text="1 Serving of grilled or boiled chicken"
+            android:textColor="#827676"
+            android:textSize="14dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/arImg8"
+            app:layout_constraintTop_toBottomOf="@+id/tv11" />
+
+        <ImageView
+            android:id="@+id/arImg9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_right_arrows"
+            app:layout_constraintEnd_toEndOf="@+id/arImg8"
+            app:layout_constraintStart_toStartOf="@+id/arImg8"
+            app:layout_constraintTop_toBottomOf="@+id/arImg8" />
+
+        <TextView
+            android:id="@+id/tv13"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="22dp"
+            android:lineSpacingExtra="6dp"
+            android:text="salad with fruits and vegetables"
+            android:textColor="#827676"
+            android:textSize="14dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/arImg9"
+            app:layout_constraintTop_toBottomOf="@+id/tv12" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="73dp"
+        android:layout_height="46dp"
+        android:background="@drawable/corners2"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

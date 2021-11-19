@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditProfileActivity">
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="204dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/roboto"
+        android:text="Edit Profile"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/img_welcome_prof"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="74.5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/sample_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <ImageButton
+        android:id="@+id/img_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46.5dp"
+        android:layout_marginTop="49.5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_add_photo"
+        app:layout_constraintStart_toStartOf="@+id/img_welcome_prof"
+        app:layout_constraintTop_toTopOf="@+id/img_welcome_prof" />
+
+    <EditText
+        android:id="@+id/userET"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border1"
+        android:layout_marginTop="47.5dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:hint="Sophia Jac"
+        android:textColorHint="@color/grey1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_welcome_prof" />
+
+    <TextView
+        android:id="@+id/heightTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:fontFamily="@font/roboto"
+        android:text="169 cm"
+        android:textColor="@color/grey1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/heightET"
+        app:layout_constraintEnd_toEndOf="@+id/heightET"
+        app:layout_constraintStart_toStartOf="@+id/heightET"
+        app:layout_constraintTop_toTopOf="@+id/heightET" />
+
+    <EditText
+        android:id="@+id/heightET"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border1"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_vertical"
+        android:paddingStart="33.5dp"
+        android:hint="Height"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/grey1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userET" />
+
+    <TextView
+        android:id="@+id/weightTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:fontFamily="@font/roboto"
+        android:text="82 kg"
+        android:textColor="@color/grey1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weightET"
+        app:layout_constraintEnd_toEndOf="@+id/weightET"
+        app:layout_constraintStart_toStartOf="@+id/weightET"
+        app:layout_constraintTop_toTopOf="@+id/weightET" />
+
+    <EditText
+        android:id="@+id/weightET"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border1"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_vertical"
+        android:paddingStart="33.5dp"
+        android:hint="Weight"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/grey1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightET" />
+
+    <TextView
+        android:id="@+id/genderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Female"
+        android:layout_marginStart="170dp"
+        android:textColor="@color/grey1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/genderET"
+        app:layout_constraintEnd_toEndOf="@+id/genderET"
+        app:layout_constraintStart_toStartOf="@+id/genderET"
+        app:layout_constraintTop_toTopOf="@+id/genderET" />
+
+    <EditText
+        android:id="@+id/genderET"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border1"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_vertical"
+        android:paddingStart="33.5dp"
+        android:hint="Gender"
+        android:inputType="text"
+        android:textColorHint="@color/grey1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightET" />
+
+    <TextView
+        android:id="@+id/goalWeightTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="60 kg"
+        android:layout_marginStart="170dp"
+        android:textColor="@color/grey1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/goalWeightET"
+        app:layout_constraintEnd_toEndOf="@+id/goalWeightET"
+        app:layout_constraintStart_toStartOf="@+id/goalWeightET"
+        app:layout_constraintTop_toTopOf="@+id/goalWeightET" />
+
+    <EditText
+        android:id="@+id/goalWeightET"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border1"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_vertical"
+        android:paddingStart="33.5dp"
+        android:hint="Goal Weight"
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/grey1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderET" />
+
+    <Button
+        android:id="@+id/dietbtn"
+        android:layout_width="231dp"
+        android:layout_height="40dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/corners1"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="59.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalWeightET" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

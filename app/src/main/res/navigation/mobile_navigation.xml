@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_prof">
+
+    <fragment
+        android:id="@+id/nav_calories"
+        android:name="android.example.fitnessapplication.activities.ui.Calories.CaloriesFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_calories" />
+
+    <fragment
+        android:id="@+id/nav_plans"
+        android:name="android.example.fitnessapplication.activities.ui.Plans.PlansFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_plans" />
+
+    <fragment
+        android:id="@+id/nav_progress"
+        android:name="android.example.fitnessapplication.activities.ui.Progress.ProgressFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_progress" />
+
+    <fragment
+        android:id="@+id/nav_notif"
+        android:name="android.example.fitnessapplication.activities.ui.Notification.NotificationFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_notif" />
+
+    <fragment
+        android:id="@+id/nav_prof"
+        android:name="android.example.fitnessapplication.activities.ui.Profile.ProfileFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_prof" />
+
+    <fragment
+        android:id="@+id/nav_rate"
+        android:name="android.example.fitnessapplication.activities.ui.Rate.RateFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_rate" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="android.example.fitnessapplication.activities.ui.LogOut.LogoutFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_logout" />
+
+</navigation>
